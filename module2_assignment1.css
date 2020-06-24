@@ -1,0 +1,45 @@
+.c{
+    display: flex;
+    flex-direction:row;
+}
+
+.c1{
+    background-color: red;
+    /* display: flex;
+    flex-direction: row; */
+    padding: 40px;
+    margin: 10px;
+    border: 1px solid black;   
+    /* 768px and 991px */
+}
+.c2{
+    display: flex;
+    /* flex-direction:row; */
+}
+
+@media screen and (min-width:768px) and (max-width:991px)
+{
+    .c{
+        display: flex;
+        flex-direction: column;
+    }
+    .c1{
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width:767px)
+{
+    .c{
+        display: flex;
+        flex-direction: column;
+    }
+    .c2{
+        display: flex;
+        flex-direction: column;
+    }
+    .c1{
+        width: 20%;
+        background-color: green;
+    }
+}
